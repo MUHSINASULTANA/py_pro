@@ -18,9 +18,9 @@ def booking (request):
         if form.is_valid():
             form.save()    
         return render(request,'confirmation.html') #pointing to urls.py paths
-    else:
-            form = BookingForm()
-    return render(request, "booking.html", {'form':form})
+#     else:
+#             form = BookingForm()
+#     return render(request, "booking.html", {'form':form})
     # if request.method =='POST' in request.POST:
     #     form=BookingForm(request.POST)
     #     if form.is_Valid():
